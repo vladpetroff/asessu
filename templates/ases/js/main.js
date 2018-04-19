@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 	$("#feedback").validationEngine();
 	
-	$(".various").fancybox({
+	/*$(".various").fancybox({
 				"frameWidth" : '700px',
 				"frameHeight" : '600px',
 				'titlePosition'		: 'inside',
@@ -19,7 +19,9 @@ $(document).ready(function(){
 				"hideOnContentClick" :'false',
 				"centerOnScroll" : 'false'
 
-	});
+	});*/
+
+    if($.fn.lightcase){ $('a.various').lightcase(); }
 
 
     var cont_height = $('.container_24').height();
