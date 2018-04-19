@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>{PAGE_TITLE}</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <meta name="keywords" content="{PAGE_KEYWORDS}"/>
+    <meta name="description" content="{PAGE_DESCRIPTION}"/>
+
+    <!-- feedback form begin -->
+    <link rel="stylesheet" type="text/css" href="/templates/easy/css/validationEngine.jquery.css" media="screen, projection" />
+    <script type="text/javascript" src="/core/inc/js/libs/formValidator/languages/jquery.validationEngine-ru.js"></script>
+    <script type="text/javascript" src="/core/inc/js/libs/formValidator/jquery.validationEngine.js"></script>
+    <script type="text/javascript" src="/core/inc/js/libs/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+    <script type="text/javascript" src="/core/inc/js/libs/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="/core/inc/js/libs/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+    <!-- feedback form end -->
+    
+    <link rel="stylesheet" type="text/css" href="/templates/ases/css/main.css"/>
+    <script type="text/javascript" src="/templates/ases/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/templates/ases/js/main.js"></script>
+    <!--[if lt IE 8]>
+        <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta2)/IE8.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  {BROWSER}
+      <div id="wrap">
+        <!-- feedback form begin -->
+        <div class="feedback">
+          <div class="feedback_main">
+            <a href="#" class="feedback_close"></a>
+            <form action="" class="feedback" method="post" id="feedback">
+			  <input type="hidden" value="{SUID}">
+              {FEEDBACK}
+              <input type="submit" value="" class="btn">
+            </form>
+          </div>  <!-- end .feedback_main -->
+        </div>   <!-- edn .feedback -->
+        
+        <div class="feedback_side">
+          <a href="#" class="feedback_open"><img src="/templates/ases/i/feedback_side.png" alt="Обратная связь"></a>
+          <a href="https://www.facebook.com/detectorlzhi" class="logo-social"><img src="/templates/ases/i/fb-logo.png" alt="facebook"></a>
+          <a href="http://vk.com/detectorlzhi" class="logo-social"><img src="/templates/ases/i/vk-logo.png" alt="ВКонтакте"></a>
+        </div>  <!-- end .feedback_side -->
+        <!-- feedback form end -->
+
+          <div class="container_24">
+    <!-- [ff] begin header -->
+              <div id="header" class="grid_24">
+                  <div id="h-head-top" class="grid_24 alpha omega">
+                      <div id="b-head-top-logo" class="grid_2 prefix_1 alpha">
+                          <a href="/"><img src="/templates/ases/i/b-top-logo-trans.png" width="80" height="98" alt="ASES"/></a>
+                      </div>  <!-- [ff] b-head-top-logo -->
+                      <div id="b-head-top-name" class="grid_13 prefix_1">
+                          <h2>Агентство Системных Исследований Безопасности</h2>
+                      </div>  <!-- [ff] b-head-top-name -->
+                      <div id="b-head-top-kont" class="grid_4 prefix_2 omega">
+                      {*PHONE*}
+                      </div>  <!-- [ff] b-head-top-kont -->
+                  </div>  <!-- [ff] end #h-head-top -->
+
+                  <div class="clear"></div>
+
+              </div>   <!-- [ff] end #header -->
+    <!-- [ff] end header -->
+
+            <div class="clear"></div>
+
+    <!-- [ff] begin content -->
+              <div id="content" class="grid_24">
+                <div class="nav">
+                  <ul>
+                    {MMENU}
+                  </ul>
+                </div>
+
+                  <div class="clear"></div>
+
+                  <div id="h-cont" class="grid_22 prefix_1 suffix_1 alpha omega">
+                      <div id="inn-cont" class="grid_22 alpha omega">
+                      {PAGE_HEADER}
+                      {PAGE_CONTENT}
+                      </div>  <!-- [ff] end #inn-cont -->
+                  </div>  <!-- [ff] end #h-cont -->
+              </div> <!-- [ff] end #content -->
+
+              <div class="clear"></div>
+    <!-- [ff] end content -->
+
+
+    <!-- [ff] begin footer -->
+              <div id="footer" class="grid_24">
+                  <div id="copy" class="grid_5 prefix_1 alpha">
+                      <p>2010 Copyright ASES</p>
+                      <a href="copy.html">Пользовательское соглашение</a>
+                  </div>  <!-- [ff] end #copy -->
+                  <div id="easy-logo" class="grid_3 prefix_10">
+                      <a href="http://easylabs.ru"><img src="/templates/ases/i/easy_logo-trans.png" width="110" height="25" alt="easylabs.ru"/></a>
+                  </div>  <!-- [ff] end .b-foot-easy -->
+                  <div id="easylink" class="grid_5 omega">
+                      <p>Сайт разработан в компании <br/> <a href="http://easylabs.ru">Easy Labs</a>, 2013 &nbsp;</p>
+                  </div>   <!-- [ff] end .b-foot-easylink -->
+              </div>   <!-- [ff] end #footer -->
+    <!-- [ff] end footer -->
+    <div class="clear"></div>
+
+          </div>  <!-- [ff] end .container_24 -->
+      
+
+  </body>
+</html>
+
+

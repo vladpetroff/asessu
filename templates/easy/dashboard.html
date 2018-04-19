@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+	<title>{TITLE}</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=8"/>
+	<script type="text/javascript" src="/templates/easy/js/translate.js"></script>	
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+    //google.load("language", "1");
+   
+	google.language = {};
+	google.language.translate = function (str,l1,l2,callback) {
+		callback.apply(null,[{error:false,translation:translate(str)}]);
+	}
+
+	var admin_menu = {ADMIN_MENU};
+    </script>    
+	<script type="text/javascript" src="/core/inc/js/libs/jquery-1.4.1.min.js"></script>
+	<script type="text/javascript" src="/core/inc/js/libs/jquery.rightClick.js"></script>
+	<script type="text/javascript" src="/core/inc/js/libs/jquery.growl.js"></script>	
+	<script type="text/javascript" src="/core/inc/js/libs/ui/jquery-ui.js"></script>
+	<script type="text/javascript" src="/core/inc/js/libs/ui/ui.core.js"></script>
+	<script type="text/javascript" src="/core/inc/js/libs/ui/ui.dialog.js"></script>
+	<script type="text/javascript" src="/core/inc/js/libs/ui/ui.sortable.js"></script>
+	<script type="text/javascript" src="/core/inc/js/libs/ui/ui.draggable.js"></script>
+	<script type="text/javascript" src="/core/inc/js/libs/ui/ui.progressbar.js"></script>
+	<script type="text/javascript" src="/core/inc/js/libs/ui/ui.datepicker.js"></script>
+	<script type="text/javascript" src="/core/inc/js/libs/ui/i18n/ui.datepicker-ru.js"></script>
+	<script type="text/javascript" src="/core/inc/js/libs/ui/ui.easy.dashboard.js"></script>
+	<script type="text/javascript" src="/core/inc/js/libs/ui/ui.easy.menu.js"></script>
+	<script type="text/javascript" src="/core/inc/js/libs/ui/ui.easy.spinner.js"></script>
+	<script type="text/javascript" src="/core/inc/js/libs/ui/ui.easy.navigation.js"></script>
+	<script type="text/javascript" src="/core/inc/js/libs/ui/ui.easy.contextmenu.js"></script>
+	<script type="text/javascript" src="/core/inc/js/libs/ui/ui.easy.tableview.js"></script>
+	<script type="text/javascript" src="/core/inc/js/libs/ui/ui.easy.imagesView.js"></script>
+	<script type="text/javascript" src="/core/inc/js/libs/jquery.ocupload-1.1.2.js"></script>
+	<script type="text/javascript" src="/core/inc/js/libs/jquery.lightbox-0.5.js"></script>
+	<script type="text/javascript" src="/core/inc/ckeditor/ckeditor.js"></script>
+	<script type="text/javascript" src="/templates/easy/js/script.js"></script>
+	<!--script type="text/javascript" src="/core/inc/redactor/redactor.js"></script>
+	<link rel="stylesheet" href="/core/inc/redactor/css/redactor.css" type="text/css" /-->	
+	
+	
+	
+	<link rel="stylesheet" type="text/css" href="/templates/easy/css/reset.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="/templates/easy/css/style.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="/templates/easy/css/jquery.lightbox-0.5.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="/templates/easy/css/base/jquery-ui.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="/templates/easy/css/base/ui.dialog.css" media="all" />
+</head>
+<body>
+	
+</body>
+</html>

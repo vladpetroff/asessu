@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+	<title>{TITLE}</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=7"/>
+	<!-- Стили -->
+	<link rel="stylesheet" type="text/css" href="/templates/easy/css/reset.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="/templates/easy/css/style.css" media="all" />
+</head>
+<body id="login">
+<form class="login" method="post" action="/login/attempt">
+		<fieldset>
+			{ERROR_MSG}
+			<label for="login_fld">Имя пользователя:</label><input type="text" name="login" id="login_fld"/>
+			<label for="pass_fld">Пароль:</label><input type="password" name="pass" id="pass_fld"/>
+			<button type="submit">Войти</button>
+		</fieldset>
+ </form>
+ </body>
+</html>

@@ -1,0 +1,25 @@
+AddDefaultCharset utf-8
+
+DirectoryIndex /core/index.php
+Options +FollowSymLinks
+
+RewriteEngine on
+RewriteBase /core/
+
+#[k] 404 redirect
+RewriteRule ^404.html$ error/404.htm [L]
+
+#[k] ie6 redirect
+RewriteRule ^ie6.html$ error/ie6/ie6.htm [L]
+
+
+#[k] page rule with debug modifier
+RewriteRule ^\/?([\/A-Za-z0-9_-]+)\.html\\$ index.php?params=$1&debug=23 [L]
+
+#[k] page rule
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^\/?([\/A-Za-z0-9_-]+)\.html$ index.php?params=$1 [L]
+
+#[k] catalog rule
+RewriteCond %{REQUEST_FILENAME} !-d  
+RewriteRule ^\/?([\/A-Za-z0-9_-]+)$ index.php?params=$1 [L]
